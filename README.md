@@ -1,5 +1,6 @@
 # chemical_formula 
 > Made for sci-competition
+> dedicate to YJ
 
 ## 탐구 주제
 프로그래밍을 통하여 우리가 평소에 외우기 힘들었던 화학식을 자동으로 완성해주어 더 쉽고 빠르게 암기를 할 수 있도록 하는 앱을 만드는 것
