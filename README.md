@@ -2,37 +2,42 @@
 > Made for sci-competition
 > | dedicate to YJ
 
-## 탐구 주제
-프로그래밍을 통하여 우리가 평소에 외우기 힘들었던 화학식을 자동으로 완성해주어 더 쉽고 빠르게 암기를 할 수 있도록 하는 앱을 만드는 것
+## Research Topic
 
-## 탐구하게 된 동기
-저희 또래의 아이들은 중학교 2학년에 분자와 원자를 배우고, 3학년 때 본격적으로 화학반응식을 외우기 시작합니다.
-하지만 이런 화학반응식을 외우는데 어려움을 느끼는 친구를 자주 보았고 또한 저희도 처음에 외울 때는 헷갈렸습니다.
-하지만 이 프로그램을 만듦으로써 화학반응식을 좀더 쉽고 편리하게 외울 수 있게 하려고 합니다.
+Developing an app using programming that automatically completes chemical equations to help students memorize them more easily and efficiently.
 
-## 선행 연구 및 고찰 
-화학 반응식은 화학 반응이 일어나면 반응하는 물질인 반응물과 반응물 사이에서 원자의 재배열이 일어나 새로운 결합을 형성하게 된 생성물을 화학식, 기호를 이용하
-여 나타낸 식입니다.
-이 결합과정 중 하나가 이온결합 인데, 이것이 우리가 학교에서 배우는 것입니다. 하지만 이 화학반응식을 쓸 때 각 원소의  전하량이 같지 않으므로 원자의 개수를 
-다르게 해주어야 하고 , 그 과정에서 각 분자들의 계수를 맞춰줘야 합니다. 
-중학교 교과서에는 이온결합 밖에 실려 있지 않지만, 이 이외에도 금속결합, 공유결합이 있습니다.
+⸻
 
-## 탐구를 실행한 절차 
-어떤 프로그램을 사용해 만들 것인지를 생각합니다.
-어떤 프로그래밍 언어를 사용해 만들 것인지를 생각합니다,
-먼저 프로그램을 짜기 전에 어떻게 프로그램을 짤지 구상합니다:
-사용자가 입력한 화학반응식을 받는 프로그램을 짜고, 그 받은 화학식을 어떻게 나눌지도 구상합니다,
-그리고 그 나눈 화학식의 원자들을 각각 분석해 그에 맞는 분자의 계수비를 만들어 출력하도록 구상합니다.
-프로그램 구상이 끝나면 프로그램을 만듭니다.
-만드는 도중에 오류나 에러가 뜨면 다시 시행착오를 겪으면서 오류를 고쳐 나갑니다,
-오류 없이 전부 작동되는 것을 확인합니다,
-프로그램을 여러 번 실행해보면서 오류를 다시 찾습니다.
+## Motivation
 
-## 탐구 방법
-프로그래밍 언어는 C++이라는 언어를 사용하였고 비주얼 스튜디오라는 앱을 통해서 프로그래밍을 했습니다.
-비주얼 스튜디오에서 프로그래밍을 하고 수시로 실행을 하여 오류가 있는지 확인하고 화학반응식에서의 계수비의를 이용해 연립방적식을 만들어 프로그램을
-만듭니다.
-화학 반응식의 계수를 맞추는 데에는 미정계수법을 사용했다. 각 계수를 n1, n2, n3, n4와 같이 미지수로 두고 각 원자의 개수에 대해 등식을 세워 연립방정식을 만들었습니다. 
-이 중 n1을 기준으로 하고 나머지 미지수의 상대적인 값을 구하여 마지막에 가장 간단한 자연수의 비로 나타내었습니다.
-이 만든 프로그램을 다시 실행해보는 단계에서 많은 경우의 수가 나올 수 있는 화학 반응식을 입력함으로써 오류가 있는지 없는지 찾아낼 수 있고, 많이 시도하여
-오류를 최대한 줄여가며 프로그래밍 했습니다.
+Students in our age group typically learn about molecules and atoms in the 8th grade and begin memorizing chemical reactions more seriously in the 9th grade. However, many of our classmates found it difficult to memorize these reactions, and we also experienced confusion when we first encountered them. To make the memorization process easier and more accessible, we decided to create a program that helps users understand and recall chemical equations more effectively.
+
+⸻
+
+## Preliminary Research and Considerations
+
+A chemical equation represents the substances involved in a chemical reaction using symbols and formulas. When a reaction occurs, the reactants undergo atomic rearrangement, forming new bonds and resulting in products. One such bonding process is ionic bonding, which is mainly taught in middle school. However, in addition to ionic bonding, there are also metallic and covalent bonds.
+
+When writing a chemical equation, the charges of the atoms involved are not always balanced. To address this, the number of atoms must be adjusted to satisfy the law of conservation of mass. This includes balancing the coefficients of each molecule in the equation. While middle school textbooks primarily focus on ionic bonding, our program aims to cover various types of chemical bonds and support automatic balancing of chemical equations.
+
+⸻
+
+## Procedure
+	1.	We first considered which software and programming language to use.
+	2.	We designed the program logic before coding:
+	•	Accept a chemical reaction input from the user
+	•	Parse and split the chemical formula
+	•	Analyze the atoms involved and determine the correct coefficient ratios
+	3.	Once the program structure was finalized, we began coding.
+	4.	During development, we encountered and fixed various bugs through trial and error.
+	5.	After initial debugging, we tested the program repeatedly to identify and correct any remaining issues.
+
+⸻
+
+## Methodology
+
+We used the C++ programming language and developed the program using Visual Studio. By frequently running the program, we continuously checked for errors. To balance the coefficients of the chemical equations, we applied the method of undetermined coefficients.
+
+Each coefficient was treated as an unknown variable (e.g., n1, n2, n3, n4), and we created a system of linear equations based on the number of atoms on both sides of the reaction. Using one variable as a reference (e.g., n1), we derived the relative values of the others and then simplified them into the smallest possible ratio of natural numbers.
+
+To ensure the robustness of the program, we tested it with various chemical reactions. By inputting equations with different structures and complexities, we were able to find and resolve additional errors, gradually improving the program’s accuracy and reliability.
